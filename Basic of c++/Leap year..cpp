@@ -1,9 +1,37 @@
-//	Q. Write a Program to find leap years between two given numbers and store them in an array. And then print that array.
+//	Q. Write a program to read and print distance for feet and inches.
 //	For example,
-//	Input:
-//	Enter the first number: 2020
+//	input : 
+//	Enter feet: 6
+//	Enter inches: 40
 //	
-//	Enter the second number: 2040
-//	
-//	Output:
-//	The array is: 2020, 2024, 2028, 2032, 2036, 2040
+//	output: Feet - 9, Inch - 4
+
+#include<iostream>
+using namespace std;
+
+main()
+{
+	int x;
+	cout << "First year :";
+	cin >> x;
+	int y;
+	cout << "Second year :";
+	cin >> y;
+
+	int year = y - x;
+	int total = (year / 4) + 1;
+	int a[total];
+	int i;
+	cout <<  endl;
+	for( i=x ; i<=y ; i++)
+	{
+		if(i%4==0)
+		{
+			cout << i << "  ";
+			a[total] = total;
+		}
+	}
+	cout << endl << endl <<"Total leap year is : "<< a[total]  ;
+	
+	
+}
