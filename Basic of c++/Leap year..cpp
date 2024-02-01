@@ -1,10 +1,12 @@
-//	Q. Write a program to read and print distance for feet and inches.
+//	Q. Write a Program to find leap years between two given numbers and store them in an array. And then print that array.
 //	For example,
-//	input : 
-//	Enter feet: 6
-//	Enter inches: 40
+//	Input:
+//	Enter the first number: 2020
 //	
-//	output: Feet - 9, Inch - 4
+//	Enter the second number: 2040
+//	
+//	Output:
+//	The array is: 2020, 2024, 2028, 2032, 2036, 2040
 
 #include<iostream>
 using namespace std;
