@@ -12,7 +12,7 @@ class Temperature
 			float celsius,fahrenheit,kelvin;
 
 };
-class Convert_T : public Temperature
+class Convert_F : public Temperature
 {
 	public:
 		void toFehrenheit()
@@ -26,6 +26,10 @@ class Convert_T : public Temperature
 			cout << "            Fahrenheit = "<<fahrenheit <<endl;
 		}
 		
+};
+class Convert_K : public Convert_F
+{
+	public:
 		void toKelvin()
 		{
 			//K = (F − 32) × 5 ⁄ 9 + 273.15
@@ -35,9 +39,10 @@ class Convert_T : public Temperature
 			
 		}
 };
+
 int main()
 {
-	Convert_T t;
-	t.toFehrenheit();
-	t.toKelvin();
+	Convert_K k;
+	k.toFehrenheit();
+	k.toKelvin();
 }
